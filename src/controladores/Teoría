@@ -1,0 +1,15 @@
+/* PREGUNTAS A RESPONDER EN ESTE ARCHIVO
+ * 1 ¿Por qué el orden de los catch en main es importante?
+ Porque si tu pones una Excepcion en general en un sitio que no se puede poner pues lo que pasaria es que anulas las otras excepciones y estarias usando la general
+ 
+ * 2 ¿Qué problema había en catch (Exception e) dentro de procesarTransferencia?
+ No hay ningún problema ya que catch (Exception e) no existe ni ha existido dentro de ese método
+ 
+ * 3 ¿Cómo soluciona try-with-resources el problema de NullPointerException en el cierre del archivo?
+ 
+ pues por ejemplo en los bloques de try-catch-finally al cerrar un recurso dentro de finally si ese recurso nunca antes se habia inicializado,
+ si por ejemplo se habia fallado al crearlo o queriendolo cerrar o algo podria provocar un NullPointerException
+ 
+ * 4 ¿Por qué no debemos lanzar excepciones dentro de finally?
+ porque el finally siempre se va a ejecutar funcione el try o funcione el catch eso quiere decir que si tu pones una excepcion dentro del finally alomejor se ejecuta el try y te pone la excepcion que tienes y ahora despues en el finally te vuelve a poner la excepcion o te pone la excepcion que hayas puesto,es decir que como se ejecuta siempre no se debe poner una excepcion
+ * */
